@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "jobs-board",
+  "version": "1.0.0",
+  "workspaces": [
+    "front",
+    "server"
+  ],
+  "scripts": {
+    "start": "yarn --cwd server start",
+    "dev": "yarn --cwd front dev",
+    "build": "yarn --cwd front build",
+    "lint": "yarn --cwd front lint"
+  }
+}

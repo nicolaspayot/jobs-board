@@ -1,0 +1,318 @@
+[
+  {
+    "id": 1,
+    "title": "Presentation Jedi",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-30T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 2,
+    "title": "Functionality Architect",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-19T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 3,
+    "title": "Senior Optimization Conquerer",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-28T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 4,
+    "title": "SSH magician",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-11T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": false,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 5,
+    "title": "Senior Quality Engineer",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-02T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 6,
+    "title": "Remote Coffee Machine Unicorn",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-17T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": true,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 7,
+    "title": "Junior Ticket Analyst",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-10T00:00:00.000Z",
+    "remote": false,
+    "location": "Los Angeles",
+    "fullTime": true,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 8,
+    "title": "Storytelling Hero",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-21T00:00:00.000Z",
+    "remote": false,
+    "location": "New York",
+    "fullTime": false,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 9,
+    "title": "Code Formatting Shaman",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-27T00:00:00.000Z",
+    "remote": false,
+    "location": "San Francisco",
+    "fullTime": true
+  },
+  {
+    "id": 10,
+    "title": "SQL evangelist",
+    "category": "DRAFT",
+    "candidates": 0,
+    "modificationDate": "2020-10-25T00:00:00.000Z",
+    "remote": false,
+    "location": "Los Angeles",
+    "fullTime": true
+  },
+  {
+    "id": 11,
+    "title": "Growth Engineer",
+    "category": "PUBLISHED",
+    "candidates": 12,
+    "modificationDate": "2020-10-14T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 12,
+    "title": "Jira Analyst",
+    "category": "PUBLISHED",
+    "candidates": 9,
+    "modificationDate": "2020-10-12T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": false,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 13,
+    "title": "Lead Quality Master",
+    "category": "PUBLISHED",
+    "candidates": 3,
+    "modificationDate": "2020-10-06T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 14,
+    "title": "Prototype Supervisor",
+    "category": "PUBLISHED",
+    "candidates": 15,
+    "modificationDate": "2020-10-29T00:00:00.000Z",
+    "remote": false,
+    "location": "New York",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 15,
+    "title": "Security Rebel",
+    "category": "PUBLISHED",
+    "candidates": 8,
+    "modificationDate": "2020-10-13T00:00:00.000Z",
+    "remote": false,
+    "location": "San Francisco",
+    "fullTime": true,
+    "ownerId": "npa123"
+  },
+  {
+    "id": 16,
+    "title": "Database Magician",
+    "category": "PUBLISHED",
+    "candidates": 5,
+    "modificationDate": "2020-10-04T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": false,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 17,
+    "title": "Junior Equations Leader",
+    "category": "PUBLISHED",
+    "candidates": 11,
+    "modificationDate": "2020-10-16T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 18,
+    "title": "Lead Email Moderator",
+    "category": "PUBLISHED",
+    "candidates": 19,
+    "modificationDate": "2020-10-07T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": true,
+    "ownerId": "sah123"
+  },
+  {
+    "id": 19,
+    "title": "Principal Wordpress Expert",
+    "category": "PUBLISHED",
+    "candidates": 20,
+    "modificationDate": "2020-10-24T00:00:00.000Z",
+    "remote": false,
+    "location": "Los Angeles",
+    "fullTime": true
+  },
+  {
+    "id": 20,
+    "title": "Algorithm Architect",
+    "category": "PUBLISHED",
+    "candidates": 2,
+    "modificationDate": "2020-10-20T00:00:00.000Z",
+    "remote": false,
+    "location": "New York",
+    "fullTime": false
+  },
+  {
+    "id": 21,
+    "title": "Integration Coach",
+    "category": "PUBLISHED",
+    "candidates": 1,
+    "modificationDate": "2020-10-08T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": true
+  },
+  {
+    "id": 22,
+    "title": "Javascript Guide",
+    "category": "PUBLISHED",
+    "candidates": 16,
+    "modificationDate": "2020-10-15T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": true
+  },
+  {
+    "id": 23,
+    "title": "Data Director",
+    "category": "PUBLISHED",
+    "candidates": 6,
+    "modificationDate": "2020-10-18T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true
+  },
+  {
+    "id": 24,
+    "title": "VP of Engineering",
+    "category": "PUBLISHED",
+    "candidates": 10,
+    "modificationDate": "2020-10-05T00:00:00.000Z",
+    "remote": false,
+    "location": "San Francisco",
+    "fullTime": false
+  },
+  {
+    "id": 25,
+    "title": "Lead Bug Fixer",
+    "category": "PUBLISHED",
+    "candidates": 4,
+    "modificationDate": "2020-10-23T00:00:00.000Z",
+    "remote": false,
+    "location": "Los Angeles",
+    "fullTime": true
+  },
+  {
+    "id": 26,
+    "title": "Templates Ninja",
+    "category": "PUBLISHED",
+    "candidates": 7,
+    "modificationDate": "2020-10-01T00:00:00.000Z",
+    "remote": true,
+    "location": "New York",
+    "fullTime": true
+  },
+  {
+    "id": 27,
+    "title": "Senior Code Hacker",
+    "category": "PUBLISHED",
+    "candidates": 14,
+    "modificationDate": "2020-10-03T00:00:00.000Z",
+    "remote": true,
+    "location": "San Francisco",
+    "fullTime": true
+  },
+  {
+    "id": 28,
+    "title": "Communications Analyst",
+    "category": "PUBLISHED",
+    "candidates": 13,
+    "modificationDate": "2020-10-22T00:00:00.000Z",
+    "remote": true,
+    "location": "Los Angeles",
+    "fullTime": false
+  },
+  {
+    "id": 29,
+    "title": "Powerpoint Enthusiast",
+    "category": "PUBLISHED",
+    "candidates": 17,
+    "modificationDate": "2020-10-26T00:00:00.000Z",
+    "remote": false,
+    "location": "New York",
+    "fullTime": true
+  },
+  {
+    "id": 30,
+    "title": "Troubleshooting Champion",
+    "category": "PUBLISHED",
+    "candidates": 18,
+    "modificationDate": "2020-10-09T00:00:00.000Z",
+    "remote": false,
+    "location": "San Francisco",
+    "fullTime": true
+  }
+]
