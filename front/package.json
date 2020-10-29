@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "jobs-board-front",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint \"src/**/*\" --ignore-pattern \"sass\""
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "vue": "^3.0.0-rc.1",
+    "vue-router": "^4.0.0-beta.13",
+    "vuex": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-vue": "^7.0.0-beta.4",
+    "prettier": "^2.1.2",
+    "sass": "^1.27.0",
+    "vite": "^1.0.0-rc.1"
+  }
+}
