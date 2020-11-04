@@ -21,7 +21,9 @@
             </dd>
         </dl>
         <div class="col__action">
-            <button class="job-item__promote" :class="{ disabled: job.category === 'DRAFT' }">Promote</button>
+            <button v-if="view === 'MINE' && job.category === 'DRAFT'" class="job-item__cta">Publish</button>
+            <button v-else-if="view === 'MINE' && job.category === 'PUBLISHED'" class="job-item__cta">Promote</button>
+            <button v-else class="job-item__cta">Add to mine</button>
         </div>
     </li>
 </template>
@@ -30,6 +32,10 @@
     export default {
         name: 'JobItem',
         props: {
+            view: {
+                type: String,
+                default: 'MINE',
+            },
             job: {
                 type: Object,
                 required: true,
@@ -81,7 +87,7 @@
             color: colors.$grey-light2;
         }
 
-        &__promote {
+        &__cta {
             display: inline-block;
             padding: 10px 20px;
             border-radius: 3px;
@@ -113,7 +119,7 @@
 
         &__date,
         &__candidates {
-            flex: 0 0 200px;
+            flex: 0 0 180px;
         }
     }
 </style>

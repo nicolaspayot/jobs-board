@@ -21,6 +21,7 @@
         max-width: 1020px;
         padding-right: 10px;
         padding-left: 10px;
+        position: relative;
 
         display: flex;
         flex-direction: column;

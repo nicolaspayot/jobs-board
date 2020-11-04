@@ -1,17 +1,17 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import JobsAll from '../pages/JobsAll.vue';
+import JobsMine from '../pages/JobsMine.vue';
 import JobsDrafts from '../pages/JobsDrafts.vue';
 import JobsPublished from '../pages/JobsPublished.vue';
 
 const routes = [
     {
         path: '/',
-        redirect: '/all',
+        redirect: '/mine',
     },
     {
-        path: '/all',
-        name: 'JobsAll',
-        component: JobsAll,
+        path: '/mine',
+        name: 'JobsMine',
+        component: JobsMine,
     },
     {
         path: '/drafts',

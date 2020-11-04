@@ -1,40 +1,42 @@
 <template>
+    <div class="select jobs-users">
+        Connected user:
+        <select v-model="connectedUser">
+            <option v-for="user in users" :key="user.id" :value="user">{{ user.name }}</option>
+        </select>
+    </div>
+
     <h1>Jobs board</h1>
-    <section class="jobs-filters">
-        <input v-model="query" class="jobs-filters__input" type="text" placeholder="Search jobs" />
-        <label class="jobs-filters__checkbox">Remote only&nbsp;<input v-model="remoteOnly" type="checkbox" /></label>
-        <label class="jobs-filters__checkbox"
-            >Full-Time only&nbsp;<input v-model="fullTimeOnly" type="checkbox"
-        /></label>
-    </section>
+
     <nav class="jobs-nav">
         <ul>
-            <li class="jobs-nav__item"><router-link to="/all">All jobs</router-link></li>
-            <li class="jobs-nav__item"><router-link to="/drafts">Drafts</router-link></li>
-            <li class="jobs-nav__item"><router-link to="/published">Published</router-link></li>
+            <li class="jobs-nav__item"><router-link to="/mine">Mine</router-link></li>
+            <li class="jobs-nav__item"><router-link to="/drafts">All drafts</router-link></li>
+            <li class="jobs-nav__item"><router-link to="/published">All published</router-link></li>
         </ul>
     </nav>
 </template>
 
 <script>
+    const users = [
+        { id: 'npa123', name: 'Nicolas Payot' },
+        { id: 'sah123', name: 'Sahbi Ktifa' },
+    ];
+
     export default {
         name: 'JobsHeader',
         data() {
             return {
-                query: '',
-                remoteOnly: false,
-                fullTimeOnly: false,
+                users,
+                connectedUser: users[0],
             };
         },
         watch: {
-            query() {
-                this.$store.commit('updateQuery', this.query);
-            },
-            remoteOnly() {
-                this.$store.commit('toggleRemote', this.remoteOnly);
-            },
-            fullTimeOnly() {
-                this.$store.commit('toggleFullTime', this.fullTimeOnly);
+            connectedUser: {
+                handler() {
+                    this.$store.commit('updateConnectedUser', this.connectedUser);
+                },
+                immediate: true,
             },
         },
     };
@@ -42,43 +44,21 @@
 
 <style lang="scss" scoped>
     @use '../sass/base/variables/colors';
+    @use '../sass/components/select';
 
     h1 {
         align-self: flex-start;
+        margin-top: 0;
     }
 
-    .jobs-filters {
-        background-color: colors.$white;
-        padding: 20px;
-        box-shadow: 0 1px 5px rgba(colors.$grey-main, 0.8);
-        border-radius: 6px;
-        width: 100%;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &__input {
-            flex: 1;
-            font-size: 18px;
-            padding: 5px 10px;
-            margin-right: 30px;
-            border-radius: 6px;
-            border: 2px solid rgba(colors.$grey-main, 0.8);
-            outline-color: colors.$blue-main;
-            color: colors.$grey-dark;
-        }
-
-        &__checkbox {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            flex: 0 0 150px;
-        }
+    .jobs-users {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 
     .jobs-nav {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         width: 100%;
 
         & > ul {

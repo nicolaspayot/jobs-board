@@ -1,5 +1,5 @@
 <template>
-    <jobs-list :jobs="jobs" />
+    <jobs-list :jobs="jobs" view="DRAFT" />
 </template>
 
 <script>
