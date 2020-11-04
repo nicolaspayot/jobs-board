@@ -1,0 +1,16 @@
+@use '../base/variables/colors';
+
+.select {
+    font-weight: 700;
+    color: colors.$grey-light2;
+
+    select {
+      padding: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 6px;
+      border: 2px solid rgba(colors.$grey-main, 0.8);
+      outline-color: colors.$blue-main;
+      color: colors.$grey-dark;
+    }
+}

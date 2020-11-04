@@ -1,14 +1,20 @@
 <template>
-    <jobs-list :jobs="jobs" />
+    <jobs-list :jobs="jobs" view="PUBLISHED" />
 </template>
 
 <script>
-    import JobsMixin from '../mixins/JobsMixin';
+    import useJobs from '../use/jobs';
     import JobsList from '../components/JobsList.vue';
 
     export default {
-        name: 'JobsDrafts',
+        name: 'JobsPublished',
         components: { JobsList },
-        mixins: [JobsMixin('PUBLISHED')],
+        setup() {
+            const { jobs } = useJobs('PUBLISHED');
+
+            return {
+                jobs,
+            };
+        },
     };
 </script>

@@ -13,14 +13,22 @@ const categories = {
 app.use(cors());
 
 app.get('/jobs', (req, res) => {
-    const cat = req.query.cat;
-    if (cat && categories[cat]) {
-        console.log(`Requesting ${cat} jobs ${categories[cat]}`);
-        res.json(jobs.filter(job => job.category === cat));
-    } else {
-        console.log(`Requesting ALL jobs 🚀`);
-        res.json(jobs);
+    const ownerId = req.query.ownerId;
+    if (ownerId) {
+        console.log(`Requesting jobs for user: ${ownerId} 🚀`);
+        const results = jobs.filter(job => job.ownerId === ownerId);
+        return res.status(200).json(results);
     }
+
+    const category = req.query.category;
+    if (category && categories[category]) {
+        console.log(`Requesting all ${category} jobs ${categories[category]}`);
+        const results = jobs.filter(job => job.category === category)
+        return res.status(200).json(results);
+    }
+
+    console.log(`Requesting ALL jobs 🚀`);
+    return res.status(200).json(jobs);
 });
 
 app.listen(port, () => {
