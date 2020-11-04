@@ -64,26 +64,15 @@
                 return this.orderFields.find((field) => field.value === this.orderBy).order;
             },
         },
-        watch: {
-            query() {
-                this.$store.commit('updateQuery', this.query);
-            },
-            remoteOnly() {
-                this.$store.commit('toggleRemote', this.remoteOnly);
-            },
-            fullTimeOnly() {
-                this.$store.commit('toggleFullTime', this.fullTimeOnly);
-            },
-        },
         methods: {
             queryFilter(job) {
-                return job.title.toLowerCase().includes(this.$store.state.query.toLowerCase());
+                return job.title.toLowerCase().includes(this.query.toLowerCase());
             },
             remoteFilter(job) {
-                return this.$store.state.remoteOnly ? job.remote : true;
+                return this.remoteOnly ? job.remote : true;
             },
             fullTimeFilter(job) {
-                return this.$store.state.fullTimeOnly ? job.fullTime : true;
+                return this.fullTimeOnly ? job.fullTime : true;
             },
         },
     };
